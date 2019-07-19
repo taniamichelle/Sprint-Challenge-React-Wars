@@ -1,18 +1,48 @@
 .App {
   text-align: center;
+  max-width: 500px;
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  margin-left: 17rem;
 }
 /* write your parent styles in here for your App.js */
 //styled container
 .char-card {
-  background-color: lightgray !important;
+  background-color: black !important;
+  color: white !important;
   width: 60% !important;
+  height: 140px !important;
   margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding: 2rem !important;
+}
+
+.characters {
+  display: flex;
+  flex-flow: column wrap;
+  border: 2px dashed gray;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 700px;
+  height: 2400px;
+  
+}
+
+.charCards {
+  display: flex;
+  flex-flow: column wrap;
+  // border: 2px solid red;
+  width: 60%;
+}
+
+.charPhotos {
+  display: flex;
+  flex-flow: column wrap;
+  width: 35%;
+  // border: 2px solid blue;
+  margin-top: 1.1rem;
+  margin-bottom: 1rem;
 }

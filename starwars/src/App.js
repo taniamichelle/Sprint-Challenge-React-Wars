@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CharCard from './components/CharCard';
+import { Luke, C3po, R2d2, R5d4, DarthV, Owen, Leia, Biggs, ObiWan, Beru } from './components/PhotoCard';
 import { StyledContainer } from './components/Styled';
 import axios from 'axios';
 
@@ -28,15 +29,31 @@ function App() {
     <StyledContainer>
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {char.map(results => (
-          <CharCard name={results.name}
-            gender={results.gender}
-            age={results.birth_year}
-            height={results.height}
-            mass={results.mass}
-            hair={results.hair_color}
-            eyes={results.eye_color} />
-        ))}
+        <div className='characters'>
+          <div className='charCards'>
+            {char.map(results => (
+              <CharCard name={results.name}
+                gender={results.gender}
+                age={results.birth_year}
+                height={results.height}
+                mass={results.mass}
+                hair={results.hair_color}
+                eyes={results.eye_color} />
+            ))}
+          </div>
+          <div className='charPhotos'>
+            <Luke />
+            <C3po />
+            <R2d2 />
+            <DarthV />
+            <Leia />
+            <Owen />
+            <Beru />
+            <R5d4 />
+            <Biggs />
+            <ObiWan />
+          </div>
+        </div>
       </div>
     </StyledContainer>
   );
