@@ -24,16 +24,14 @@ function App() {
     <StyledContainer>
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {char.map(data => {
-          return (
-            <CharCard gender={data.gender}
-              age={data.birth_year}
-              height={data.height}
-              mass={data.mass}
-              hairColor={data.hair_color}
-              eyeColor={data.eye_color} />
-          )
-        })}
+        {char.map(data => (
+          <CharCard gender={data.gender}
+            age={data.birth_year}
+            height={data.height}
+            mass={data.mass}
+            hairColor={data.hair_color}
+            eyeColor={data.eye_color} />
+        ))}
       </div>
     </StyledContainer>
   );
