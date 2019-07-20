@@ -26,13 +26,27 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a one-stop solution for browser needs (e.g. UX, browser caching, and so on). It speeds up data changes on a page by not having the entire page reload. Instead, you’re able to target specific areas. 
+
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in react means seeing the whole picture (or end goal) and then breaking it down into pieces which work together to achieve the end goal. We use this thought process to thoughtfully decide on our file structure and so forth.
+
 
 - [ ] Describe state.
 
+“State” is an object that represents a part of an app that you can change. 
+
+
 - [ ] Describe props.
 
+
+“Props” (short for properties) are parameters of components that you’re able to pass data and thereby change or customize a component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are when a function tries to modify something outside itself (e.g. modifying a global variable) and are not specific to React JS. We use the hook useEffect() to control if and when (and on what) a side effect occurs. 
 
 ## Project Set Up
 
